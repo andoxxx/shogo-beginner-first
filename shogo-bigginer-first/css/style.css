@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+/* 共通部分 */
+
+html{
+  font-size: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: #FFF;
+}
+
+img{
+  max-width: 100%;
+}
+
+body{
+  font-family: Arial;
+}
+
+/* ヘッダー */
+
+.header{
+  max-width: 1366px;
+  color: #FFF;
+  background-color: #EFA358;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.header-wrapper{
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo{
+  font-size: 28px;
+  padding-top: 26px;
+  padding-bottom: 23px;
+  padding-left: 24px;
+}
+
+.header-nav ul{
+  display: flex;
+  list-style: none;
+  padding-top: 31px;
+  padding-bottom: 27px;
+}
+
+.header-nav li{
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+/* メイン */
+main{
+  color: #555555;
+}
+
+.main-img{
+  max-width: 1366px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.feature-wrapper{
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 26px;
+  height: 100%;
+}
+
+.feature-ttl{
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 42px;
+}
+
+.feature-box{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px){
+  .feature-box{
+    flex-direction: column;
+  }
+}
+
+.feature-img{
+  width: 480px;
+  height: 320px;
+  margin-right: 60px;
+}
+
+.feature-contents{
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 600px){
+  .feature-contents{
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+.feature-txt{
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.read-more{
+  background: #EFA358 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 10px;
+  padding: 15px 55px;
+  font-size: 16px;
+  color: #FFF;
+  margin-top: 30px;
+}
+
+@media (max-width: 600px){
+  .read-more{
+    background: #EFA358 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 10px;
+    padding: 15px 55px;
+    color: #FFF;
+    margin-top: 20px;
+  }
+}
+
+/* フッター */
+
+.footer-wrapper{
+  max-width: 1366px;
+  height: 100px;
+  background-color: #EFA358;
+  color: #FFF;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.footer-logo{
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 20px;
+  /* ↑ここが反映されない、、、 */
+}
+
+footer p{
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
